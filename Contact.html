@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Me - My Portfolio</title>
+    <link rel="stylesheet" href="css/style.css"> <!-- Linking the external CSS file -->
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <h1>Contact Me</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <!-- Main Content Section -->
+    <main>
+        <section class="contact-form">
+            <h2>Get in Touch</h2>
+            <form id="contactForm">
+                <label for="name">Name:</label>
+                <input type="text" id="name" required>
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" required>
+                
+                <button type="submit">Submit</button>
+            </form>
+            <p id="formMessage"></p> <!-- Displays form submission message -->
+        </section>
+    </main>
+
+    <script src="js/scripts.js"></script> <!-- JavaScript for form validation -->
+</body>
+</html>

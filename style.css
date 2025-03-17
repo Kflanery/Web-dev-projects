@@ -1,0 +1,160 @@
+/* Global Styles */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #f7f7f7;
+    color: #333;
+}
+
+/* Header Section */
+header {
+    background-color: #002f6c; /* Navy Blue */
+    color: white;
+    padding: 80px 20px; /* Padding for height */
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    font-size: 3rem;
+    margin: 0;
+}
+
+/* Navigation Bar */
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    background-color: #002f6c; /* Navy Blue */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+nav ul li {
+    margin: 0 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #f4c542; /* Gold color */
+    font-size: 1.2rem;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: white;
+    text-decoration: underline;
+}
+
+/* Main Content Section */
+main {
+    padding: 60px 20px;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+/* Intro Section */
+.intro {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+/* Profile Image */
+.profile-image {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    margin-top: 20px;
+    border: 5px solid #f4c542; /* Gold border */
+}
+
+/* Projects Section */
+.projects {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.project-card {
+    background-color: #ffffff;
+    padding: 20px;
+    margin-top: 20px;
+    width: 30%;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border: 2px solid #002f6c; /* Navy Blue border */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-card h4 {
+    margin-bottom: 10px;
+    color: #002f6c; /* Navy Blue text */
+}
+
+.project-card p {
+    font-size: 1rem;
+    color: #666;
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Footer */
+footer {
+    background-color: #002f6c; /* Navy Blue */
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Section Headings */
+h2, h3 {
+    color: #002f6c; /* Navy Blue */
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+}
+
+/* Button Style */
+button {
+    background-color: #f4c542; /* Gold */
+    color: #002f6c; /* Navy Blue text */
+    padding: 12px 30px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #d4b11b; /* Darker gold */
+    color: white;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .project-card {
+        width: 100%; /* Full-width cards on smaller screens */
+    }
+
+    .intro h2 {
+        font-size: 1.8rem;
+    }
+
+    .profile-image {
+        width: 120px;
+        height: 120px;
+    }
+}
